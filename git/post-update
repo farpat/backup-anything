@@ -1,0 +1,60 @@
+#!/bin/bash
+
+big-echo () {
+	echo ""
+	echo "/*************************************************"
+	echo ""
+	echo $1
+	echo ""
+	echo "*************************************************/"
+	echo ""
+}
+
+generate-folder() {
+	#clone
+	git clone . $1
+	mv $1/.env.production $1/.env 2>/dev/null
+	chmod -R guo+w $1/storage
+	chmod -R guo+w $1/bootstrap/cache
+	
+
+	cd $1
+
+	#php
+	composer install --optimize-autoloader
+	php artisan key:generate
+	php artisan route:cache
+
+	#javascript
+	npm run production
+}
+
+update-folder() {
+	cd $1
+
+	#pull
+	unset GIT_DIR
+	git pull origin master
+	mv $1/.env.production $1/.env 2>/dev/null
+	
+	#php
+	composer update
+	php artisan route:cache
+	
+	#javascript
+	npm run production
+}
+
+post-push () {
+	project_name = "$(echo $(pwd) | cut -d'/' -f 5)"
+	if [! -e "$project_name"]
+	then
+		generate-folder $WWW$project_name
+	else
+		update-folder $WWW$project_name
+	fi
+}
+
+current_branch=$(git rev-parse --symbolic --abbrev-ref $1)
+post-push $current_branch
+# exec git update-server-info
