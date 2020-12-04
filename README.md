@@ -63,7 +63,7 @@ sudo npm i -g laravel-echo-server npm-check-updates
 # PHP && Composer
 ```bash
 sudo add-apt-repository ppa:ondrej/php
-sudo apt install php7.4 php7.4-{json,mbstring,sqlite3,xml,curl}
+sudo apt install php8.0 php8.0-{mbstring,sqlite3,xml,curl}
 
 php -r "copy('https://getcomposer.org/installer', 'composer-setup.php');"
 sudo php composer-setup.php --install-dir=/usr/local/bin --filename=composer
