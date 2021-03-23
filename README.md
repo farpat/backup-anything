@@ -60,7 +60,7 @@ sudo gpasswd -a $USER docker
 
 # Node && NPM
 ```bash
-curl -sL https://deb.nodesource.com/setup_14.x | sudo -E bash -
+curl -fsSL https://rpm.nodesource.com/setup_current.x | sudo bash -
 sudo apt install -y nodejs
 sudo npm i -g laravel-echo-server npm-check-updates
 ```
