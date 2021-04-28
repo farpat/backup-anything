@@ -75,6 +75,9 @@ sudo php composer-setup.php --install-dir=/usr/local/bin --filename=composer
 php -r "unlink('composer-setup.php');"
 ```
 
+# Google Drive
+https://blog.dorian-depriester.fr/linux/creer-un-dossier-de-synchro-google-drive-sous-linux
+
 # Other installations
 ```bash
 sudo snap install phpstorm --classic
