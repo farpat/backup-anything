@@ -83,7 +83,5 @@ sudo snap install spotify --classic
 sudo snap install libreoffice
 sudo snap install vlc
 sudo snap install discord
-sudo snap install skype
 sudo snap install chromium
-sudo snap install caprine
 ```
