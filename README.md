@@ -1,6 +1,6 @@
 # Some basics
 ```bash
-sudo apt -y install wget tree curl vim snapd snapd-xdg-open ffmpeg htop terminator
+sudo apt -y install wget tree curl vim snapd snapd-xdg-open ffmpeg htop terminator xclip xsel
 #For webcam I must think to switch the activation with `fn+F6`
 ```
 
@@ -8,9 +8,9 @@ sudo apt -y install wget tree curl vim snapd snapd-xdg-open ffmpeg htop terminat
 ```bash
 ssh-keygen -t rsa -b 4096 -C "<email>"
 
-ssh-add "private key" (if it's necessary)
+ssh-add "private key" #if it's necessary
 
-cat ~/.ssh/id_rsa.pub
+pbcopy < ~/.ssh/id_rsa.pub
 ```
 Add this key in gitlab and github (delete the old key if necessary)
 
@@ -31,10 +31,7 @@ sudo apt install -y zsh
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 
 git clone https://github.com/zsh-users/zsh-autosuggestions ~/.zsh/zsh-autosuggestions
-source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
-
 git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ~/.zsh/zsh-syntax-highlighting
-source ~/.zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 cp .zshrc ~/.zshrc
 cp .bash_aliases ~/.bash_aliases
@@ -62,7 +59,7 @@ sudo gpasswd -a $USER docker
 ```bash
 curl -fsSL https://deb.nodesource.com/setup_16.x | sudo -E bash -
 sudo apt install -y nodejs
-sudo npm i -g laravel-echo-server npm-check-updates
+sudo npm i -g npm-check-updates
 ```
 
 # PHP && Composer
@@ -76,7 +73,26 @@ php -r "unlink('composer-setup.php');"
 ```
 
 # Google Drive
-https://blog.dorian-depriester.fr/linux/creer-un-dossier-de-synchro-google-drive-sous-linux
+```
+sudo add-apt-repository ppa:alessandro-strada/ppa
+sudo apt update
+sudo apt install google-drive-ocamlfuse
+google-drive-ocamlfuse
+mkdir ~/google-drive
+google-drive-ocamlfuse ~/google-drive
+
+vim ~/.config/autostart/google-drive.desktop
+```
+
+```
+# google-drive.desktop
+[Desktop Entry]
+Type=Application
+Exec=google-drive-ocamlfuse /home/farrugia/google-drive
+X-GNOME-Autostart-enabled=true
+Name=Google Drive
+Comment[fr_FR]=Montage du dossier distant Google Drive
+```
 
 # Other installations
 ```bash

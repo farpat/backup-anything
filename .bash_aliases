@@ -9,3 +9,4 @@ function acp() {
         git push
 }
 alias uuaa='sudo apt update && sudo apt upgrade && sudo apt autoremove && sudo apt autoclean'
+alias pbcopy='xclip -selection clipboard'
