@@ -5,7 +5,7 @@ sudo apt -y install wget tree curl vim snapd snapd-xdg-open ffmpeg htop terminat
 
 # SSH
 ```bash
-ssh-keygen -t rsa -b 4096 -C "<email>"
+ssh-keygen -t rsa -b 4096 -C <email>
 
 ssh-add "private key" #if it's necessary
 
@@ -16,8 +16,8 @@ Add this key in gitlab and github (delete the old key if necessary)
 # GIT
 ```bash
 sudo apt install -y git git-flow
-git config --global user.email "<email>"
-git config --global user.name "<name>"
+git config --global user.email <email>
+git config --global user.name <name>
 git config --global alias.st status
 git config --global alias.co checkout
 git config --global pull.rebase false
