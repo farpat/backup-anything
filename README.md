@@ -1,7 +1,6 @@
 # Some basics
 ```bash
 sudo apt -y install wget tree curl vim snapd snapd-xdg-open ffmpeg htop terminator xclip xsel
-#For webcam I must think to switch the activation with `fn+F6`
 ```
 
 # SSH
