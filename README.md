@@ -1,12 +1,11 @@
 # Some basics
 ```bash
 sudo apt -y install wget tree curl vim snapd snapd-xdg-open ffmpeg htop terminator xclip xsel
-#For webcam I must think to switch the activation with `fn+F6`
 ```
 
 # SSH
 ```bash
-ssh-keygen -t rsa -b 4096 -C "<email>"
+ssh-keygen -t rsa -b 4096 -C <email>
 
 ssh-add "private key" #if it's necessary
 
@@ -17,8 +16,8 @@ Add this key in gitlab and github (delete the old key if necessary)
 # GIT
 ```bash
 sudo apt install -y git git-flow
-git config --global user.email "<email>"
-git config --global user.name "<name>"
+git config --global user.email <email>
+git config --global user.name <name>
 git config --global alias.st status
 git config --global alias.co checkout
 git config --global pull.rebase false
@@ -48,7 +47,7 @@ sudo apt-key fingerprint 0EBFCD88
 sudo add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu $(lsb_release -cs) stable"
 sudo apt update
 sudo apt install -y docker-ce docker-ce-cli containerd.io
-sudo curl -L "https://github.com/docker/compose/releases/download/1.29.1/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
+sudo curl -L "https://github.com/docker/compose/releases/download/1.29.2/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
 sudo chmod +x /usr/local/bin/docker-compose
 sudo ln -s /usr/local/bin/docker-compose /usr/bin/docker-compose
 sudo groupadd docker
