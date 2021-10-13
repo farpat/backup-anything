@@ -20,6 +20,7 @@
     "workbench.iconTheme": "vscode-icons",
     "workbench.activityBar.visible": true,
     "editor.minimap.enabled": false,
+    "javascript.inlayHints.parameterNames.enabled": "all"
 }
 
 ```
