@@ -63,6 +63,7 @@ sudo npm i -g npm-check-updates
 
 # PHP && Composer
 ```bash
+sudo apt purge --auto-remove ^php
 sudo add-apt-repository ppa:ondrej/php
 sudo apt install php8.0 php8.0-{mbstring,sqlite3,xml,curl}
 
