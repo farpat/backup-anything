@@ -56,8 +56,9 @@ sudo gpasswd -a $USER docker
 
 # Node && NPM
 ```bash
-curl -fsSL https://deb.nodesource.com/setup_16.x | sudo -E bash -
-sudo apt install -y nodejs
+# Using Ubuntu
+curl -fsSL https://deb.nodesource.com/setup_18.x | sudo -E bash -
+sudo apt-get install -y nodejs
 sudo npm i -g npm-check-updates
 ```
 
