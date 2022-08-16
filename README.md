@@ -1,6 +1,6 @@
 # Some basics
 ```bash
-sudo apt -y install wget tree curl vim snapd snapd-xdg-open ffmpeg htop terminator xclip xsel
+sudo apt -y install wget tree curl vim snapd snapd-xdg-open ffmpeg htop terminator xclip xsel flameshot
 ```
 
 # SSH
@@ -78,6 +78,23 @@ X-GNOME-Autostart-enabled=true
 Name=Google Drive
 Comment[fr_FR]=Montage du dossier distant Google Drive
 ```
+
+# Flameshot 
+Paramètres >
+
+Clavier >
+
+Voir et personnaliser les raccourcis > 
+
+Raccourcis personnalisés > 
+
+" + " > 
+
+```
+Nom : Flameshot
+Commande : flameshot gui 
+Raccourci: <Touche Impr>
+``` 
 
 # Other installations
 ```bash
