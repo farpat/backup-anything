@@ -115,3 +115,4 @@ echo 'nameserver 192.168.11.254' | sudo tee -a /etc/resolv.conf && cat /etc/reso
 ```
 xmodmap -e "keycode 49 = dead_grave"
 ``` 
+- To config SSH servers via an example : https://linuxize.com/post/using-the-ssh-config-file/#ssh-config-file-example
