@@ -88,7 +88,7 @@ Comment[fr_FR]=Montage du dossier distant Google Drive
 ```
 Nom : Flameshot
 Commande : flameshot gui 
-Raccourci: <Touche Impr>
+Raccourci : <Touche Impr>
 ``` 
 
 # Rich (rich cat)
