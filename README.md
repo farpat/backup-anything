@@ -91,7 +91,7 @@ Commande : flameshot gui
 Raccourci : <Touche Impr>
 ``` 
 
-# Rich (rich cat)
+# Rich (rich print)
 ```bash 
 pipx install rich-cli
 ```
