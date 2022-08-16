@@ -40,7 +40,7 @@ chsh -s $(which zsh)
 # Docker && Docker compose
 Follow instructions for docker: https://docs.docker.com/engine/install/ubuntu/#install-using-the-repository
 Follow instructions 
-Follow instructions for docker-compose:https://docs.docker.com/desktop/install/ubuntu/
+Follow instructions for docker-compose: https://docs.docker.com/compose/install/compose-plugin/#install-the-plugin-manually
 
 # Node && NPM
 Follow instructions: https://github.com/nodesource/distributions/blob/master/README.md#debinstall
