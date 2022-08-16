@@ -1,6 +1,6 @@
 # Some basics
 ```bash
-sudo apt -y install wget tree curl vim snapd snapd-xdg-open ffmpeg htop terminator xclip xsel flameshot
+sudo apt -y install wget tree curl vim snapd snapd-xdg-open ffmpeg htop terminator xclip xsel flameshot pipx
 ```
 
 # SSH
@@ -80,21 +80,21 @@ Comment[fr_FR]=Montage du dossier distant Google Drive
 ```
 
 # Flameshot 
-Paramètres >
-
-Clavier >
-
-Voir et personnaliser les raccourcis > 
-
-Raccourcis personnalisés > 
-
-" + " > 
-
+- Paramètres >
+- Clavier >
+- Voir et personnaliser les raccourcis > 
+- Raccourcis personnalisés > 
+- " + " > 
 ```
 Nom : Flameshot
 Commande : flameshot gui 
 Raccourci: <Touche Impr>
 ``` 
+
+# Rich (rich cat)
+```bash 
+pipx install rich-cli
+```
 
 # Other installations
 ```bash
@@ -105,3 +105,13 @@ sudo snap install libreoffice
 sudo snap install vlc
 sudo snap install discord
 ```
+
+# Other precisions 
+- To add DNS server :
+``` 
+echo 'nameserver 192.168.11.254' | sudo tee -a /etc/resolv.conf && cat /etc/resolv.conf 
+``` 
+- To map <square keyboard touch> to ` : 
+```
+xmodmap -e "keycode 49 = dead_grave"
+``` 
