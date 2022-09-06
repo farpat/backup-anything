@@ -13,7 +13,7 @@ pbcopy < ~/.ssh/id_rsa.pub
 ```
 Add this key in gitlab and github (delete the old key if necessary)
 
-# GIT
+# GIT / PRETTY GIT DIFF
 ```bash
 sudo apt install -y git git-flow
 git config --global user.email <email>
@@ -23,6 +23,8 @@ git config --global alias.co checkout
 git config --global pull.rebase false
 git config --global core.editor vim
 ```
+
+Follow instructions for pretty git diff: https://delicious-insights.com/fr/articles/git-protip-diff-so-fancy/
 
 # ZSH (and oh-my-zsh with plugins)
 ```bash
