@@ -20,6 +20,7 @@ git config --global user.email <email>
 git config --global user.name <name>
 git config --global alias.st status
 git config --global alias.co checkout
+git config --global alias.lg "log --graph --abbrev-commit --pretty=tformat:'%Cred%h%Creset -%C(auto)%d%Creset %s %Cgreen(%an %ad)%Creset'"
 git config --global pull.rebase false
 git config --global core.editor vim
 ```
