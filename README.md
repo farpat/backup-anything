@@ -114,7 +114,7 @@ sudo snap install discord
 ``` 
 echo 'nameserver 192.168.11.254' | sudo tee -a /etc/resolv.conf && cat /etc/resolv.conf 
 ``` 
-- To map <square keyboard touch> to ` : 
+- To map `"square keyboard touch"` to `"` : 
 ```
 xmodmap -e "keycode 49 = dead_grave"
 ``` 
