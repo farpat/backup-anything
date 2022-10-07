@@ -1,6 +1,6 @@
 # Some basics
 ```bash
-sudo apt -y install wget tree curl vim snapd snapd-xdg-open ffmpeg htop terminator xclip xsel flameshot pipx
+sudo apt -y install wget tree curl vim snapd snapd-xdg-open ffmpeg htop terminator xclip xsel flameshot pipx kazam
 ```
 
 # SSH
@@ -15,7 +15,7 @@ Add this key in gitlab and github (delete the old key if necessary)
 
 # GIT / PRETTY GIT DIFF
 ```bash
-sudo apt install -y git git-flow
+sudo apt install -y git
 git config --global user.email <email>
 git config --global user.name <name>
 git config --global alias.st status
@@ -56,30 +56,6 @@ sudo apt install php8.1 php8.1-{mbstring,sqlite3,xml,curl}
 # For composer, follow instructions: https://getcomposer.org/download/
 ```
 
-# Google Drive
-```
-# Install Google Drive (google-drive-ocamlfuse)
-sudo add-apt-repository ppa:alessandro-strada/ppa
-sudo apt update
-sudo apt install google-drive-ocamlfuse
-google-drive-ocamlfuse
-mkdir ~/google-drive
-google-drive-ocamlfuse ~/google-drive
-
-vim ~/.config/autostart/google-drive.desktop
-```
-
-```
-# Add google drive on start
-# ~/.config/autostart/google-drive.desktop
-[Desktop Entry]
-Type=Application
-Exec=google-drive-ocamlfuse /home/farrugia/google-drive
-X-GNOME-Autostart-enabled=true
-Name=Google Drive
-Comment[fr_FR]=Montage du dossier distant Google Drive
-```
-
 # Flameshot 
 - Paramètres >
 - Clavier >
@@ -104,12 +80,11 @@ pipx install rich-cli
 sudo snap install phpstorm
 sudo snap install code
 sudo snap install spotify
-sudo snap install libreoffice
 sudo snap install vlc
 sudo snap install discord
 ```
 
-# Other precisions 
+# Tips
 - To add DNS server :
 ``` 
 echo 'nameserver 192.168.11.254' | sudo tee -a /etc/resolv.conf && cat /etc/resolv.conf 
@@ -123,4 +98,14 @@ https://linuxize.com/post/using-the-ssh-config-file/#ssh-config-file-example
 - Repair Ubuntu store : 
 ```
 sudo snap remove snap-store && sudo snap install snap-store
+```
+- Bookmark with prompt : 
+```
+javascript:( 
+function() {  
+	var ticketId = window.prompt('Jira Ticket ID ?');       
+	if (ticketId) {            
+		window.open('https://any_url/' + ticketId);       
+	} 
+})();
 ```
