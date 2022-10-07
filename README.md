@@ -92,6 +92,8 @@ Commande : flameshot gui
 Raccourci : <Touche Impr>
 ``` 
 
+Pour désactiver la capture d'écran de gnome : https://askubuntu.com/a/1426942
+
 # Rich (rich print)
 ```bash 
 pipx install rich-cli
