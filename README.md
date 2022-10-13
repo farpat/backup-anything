@@ -109,3 +109,4 @@ function() {
 	} 
 })();
 ```
+- Problem innoportune deconnections : https://forum.ubuntu-fr.org/viewtopic.php?pid=22436467#p22436467 the solution ?
