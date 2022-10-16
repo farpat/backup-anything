@@ -43,7 +43,7 @@ chsh -s $(which zsh)
 # Docker && Docker compose
 Follow instructions: https://docs.docker.com/engine/install/ubuntu/#install-using-the-repository
 
-To create alias `docker-compose
+To create alias `docker-compose` :
 ```
 # /usr/bin/docker-compose (mode +x)
 docker compose --compatibility "$@"
@@ -107,12 +107,12 @@ sudo snap remove snap-store && sudo snap install snap-store
 ```
 - Bookmark with prompt : 
 ```
-javascript:( 
-function() {  
-	var ticketId = window.prompt('Jira Ticket ID ?');       
-	if (ticketId) {            
-		window.open('https://any_url/' + ticketId);       
-	} 
+javascript:(
+function() {
+	var ticketId = window.prompt('Jira Ticket ID ?');
+	if (ticketId) {
+		window.open('https://any_url/' + ticketId);
+	}
 })();
 ```
 - Problem innoportune deconnections : https://forum.ubuntu-fr.org/viewtopic.php?pid=22436467#p22436467 the solution ?
