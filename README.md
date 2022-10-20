@@ -43,10 +43,12 @@ chsh -s $(which zsh)
 # Docker && Docker compose
 Follow instructions: https://docs.docker.com/engine/install/ubuntu/#install-using-the-repository
 
-To create alias `docker-compose` :
+Next :
 ```
-# /usr/bin/docker-compose (mode +x)
-docker compose --compatibility "$@"
+vim /usr/bin/docker-compose
+# docker compose --compatibility "$@"
+
+sudo gpasswd -a $USER docker
 ```
 
 # Node && NPM
