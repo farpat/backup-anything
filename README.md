@@ -49,6 +49,7 @@ vim /usr/bin/docker-compose
 # docker compose --compatibility "$@"
 
 sudo gpasswd -a $USER docker
+sudo chmod +x /usr/bin/docker-compose
 ```
 
 # Node && NPM
