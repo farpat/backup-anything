@@ -89,6 +89,7 @@ sudo snap install phpstorm
 sudo snap install code
 sudo snap install spotify
 sudo snap install vlc
+sudo snap install postman
 ```
 
 # Tips
