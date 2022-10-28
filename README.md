@@ -58,7 +58,6 @@ Follow instructions: https://github.com/nodesource/distributions/blob/master/REA
 ```bash
 # For PHP 
 sudo apt purge --auto-remove ^php
-LC_ALL=C.UTF-8 sudo add-apt-repository ppa:ondrej/php 
 sudo apt install php8.1 php8.1-{mbstring,sqlite3,xml,curl}
 
 # For composer, follow instructions: https://getcomposer.org/download/
