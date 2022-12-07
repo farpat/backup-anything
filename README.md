@@ -1,6 +1,6 @@
 # Some basics
 ```bash
-sudo apt -y install wget tree curl vim snapd snapd-xdg-open ffmpeg htop xclip xsel flameshot pipx kazam terminator
+sudo apt -y install wget tree curl vim snapd snapd-xdg-open ffmpeg htop xclip xsel flameshot kazam terminator
 ```
 
 # SSH
@@ -43,13 +43,16 @@ chsh -s $(which zsh)
 # Docker && Docker compose
 Follow instructions: https://docs.docker.com/engine/install/ubuntu/#install-using-the-repository
 
-Next :
+Add `docker-compose` as alias of `docker compose`:
 ```
 vim /usr/bin/docker-compose
 # docker compose --compatibility "$@"
-
-sudo gpasswd -a $USER docker
 sudo chmod +x /usr/bin/docker-compose
+```
+
+To avoid being "sudoer" when using docker:
+```
+sudo gpasswd -a $USER docker
 ```
 
 # Node && NPM
@@ -59,7 +62,7 @@ Follow instructions: https://github.com/nodesource/distributions/blob/master/REA
 ```bash
 # For PHP 
 sudo apt purge --auto-remove ^php
-sudo apt install php8.1 php8.1-{mbstring,sqlite3,xml,curl}
+sudo apt install php8.2 php8.2-{mbstring,sqlite3,xml,curl}
 
 # For composer, follow instructions: https://getcomposer.org/download/
 ```
@@ -77,11 +80,6 @@ Raccourci : <Touche Impr>
 ``` 
 
 Pour désactiver la capture d'écran de gnome : https://askubuntu.com/a/1426942
-
-# Rich (rich print)
-```bash 
-pipx install rich-cli
-```
 
 # Other installations
 ```bash
