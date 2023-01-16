@@ -1,7 +1,10 @@
 # Some basics
 ```bash
-sudo apt -y install wget tree curl vim snapd snapd-xdg-open ffmpeg htop xclip xsel flameshot kazam terminator
+sudo apt -y install wget tree curl vim snapd snapd-xdg-open ffmpeg htop xclip xsel flameshot
 ```
+
+# Gnome extensions 
+https://extensions.gnome.org/local/
 
 # SSH
 ```bash
