@@ -21,8 +21,8 @@ cleanup_branches() {
     BOLD='\033[1m'
     NO_COLOR='\033[0m' 
 
-	echo -e "${LIGHT_BLUE}Pruning and cleaning branches${NO_COLOR}"
-	git fetch --prune
-	git branch -r | awk '{print $1}' | egrep -v -f /dev/fd/0 <(git branch -vv | grep origin) | awk '{print $1}' | xargs git branch -d 2> /dev/null
-	echo -e "${GREEN}Branches pruned and cleaned${NO_COLOR}"
+    echo -e "${LIGHT_BLUE}Pruning and cleaning branches${NO_COLOR}"
+    git fetch --prune
+    git branch -r | awk '{print $1}' | egrep -v -f /dev/fd/0 <(git branch -vv | grep origin) | awk '{print $1}' | xargs git branch -d 2> /dev/null
+    echo -e "${GREEN}Branches pruned and cleaned${NO_COLOR}"
 }
