@@ -19,6 +19,7 @@ Add this key in gitlab and github (delete the old key if necessary)
 # GIT / PRETTY GIT DIFF
 ```bash
 sudo apt install -y git
+git config --global init.defaultBranch main
 git config --global user.email <email>
 git config --global user.name <name>
 git config --global alias.st status
