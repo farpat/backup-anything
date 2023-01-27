@@ -6,6 +6,12 @@ sudo apt -y install wget tree curl vim snapd snapd-xdg-open ffmpeg htop xclip xs
 # Gnome extensions 
 https://extensions.gnome.org/local/
 
+# Vim
+```
+sudo vim /etc/vim/vimrc.local
+set whichwrap+=<,>,h,l
+```
+
 # SSH
 ```bash
 ssh-keygen -t rsa -b 4096 -C <email>
