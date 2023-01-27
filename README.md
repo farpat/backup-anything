@@ -9,6 +9,8 @@ https://extensions.gnome.org/local/
 # Vim
 ```
 sudo vim /etc/vim/vimrc.local
+
+# vimrc.local
 set whichwrap+=<,>,h,l
 ```
 
