@@ -3,6 +3,15 @@
 sudo apt -y install wget tree curl vim snapd snapd-xdg-open ffmpeg htop xclip xsel flameshot
 ```
 
+# .rc.local
+```
+sudo vim /etc/rc.local
+
+# rc.local
+xmodmap -e "keycode 49 = dead_grave" &
+
+```
+
 # Gnome extensions 
 https://extensions.gnome.org/local/
 
@@ -12,6 +21,7 @@ sudo vim /etc/vim/vimrc.local
 
 # vimrc.local
 set whichwrap+=<,>,h,l
+
 ```
 
 # SSH
