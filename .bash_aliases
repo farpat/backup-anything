@@ -26,3 +26,8 @@ cleanup_branches() {
     git branch -r | awk '{print $1}' | egrep -v -f /dev/fd/0 <(git branch -vv | grep origin) | awk '{print $1}' | xargs git branch -d 2> /dev/null
     echo -e "${GREEN}Branches pruned and cleaned${NO_COLOR}"
 }
+
+USER_ID=$(id -u)
+export USER_ID
+GROUP_ID=$(id -g)
+export GROUP_ID
