@@ -26,5 +26,6 @@ cleanup_branches() {
     git branch -r | awk '{print $1}' | egrep -v -f /dev/fd/0 <(git branch -vv | grep origin) | awk '{print $1}' | xargs git branch -d 2> /dev/null
     echo -e "${GREEN}Branches pruned and cleaned${NO_COLOR}"
 }
-alias php="docker run --rm --interactive --tty --volume $PWD:/app -w /app php:8.2-cli php"
-alias composer="docker run --rm --interactive --tty --volume $PWD:/app composer/composer"
+alias php="docker run --rm --interactive --tty --volume $PWD:/app -w /app --user $(id -u):$(id -g) php:8.2-cli php"
+alias composer="docker run --rm --interactive --tty --volume $PWD:/app --user $(id -u):$(id -g) composer/composer"
+
