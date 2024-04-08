@@ -28,4 +28,4 @@ cleanup_branches() {
 }
 alias php="docker run --rm --interactive --tty --volume $PWD:/app -w /app --user $(id -u):$(id -g) php:8.2-cli php"
 alias composer="docker run --rm --interactive --tty --volume $PWD:/app --user $(id -u):$(id -g) composer/composer"
-
+alias update_chrome="wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb && mv ~/google-chrome-stable_current_amd64.deb ~/Downloads/chrome.deb && sudo dpkg -i ~/Downloads/chrome.deb"
