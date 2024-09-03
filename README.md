@@ -129,3 +129,4 @@ function() {
 	}
 })();
 ```
+- Repair font issue with Postman: https://github.com/postmanlabs/postman-app-support/issues/10449#issuecomment-208310685
