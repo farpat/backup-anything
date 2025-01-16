@@ -5,6 +5,13 @@ sudo apt -y install wget tree curl vim snapd snapd-xdg-open ffmpeg htop xclip xs
 
 # Gnome extensions 
 https://extensions.gnome.org/local/
+Installed extensions : 
+- Dash to Panel bu charlesg99
+- Docker by stickman_0x00
+- Emoji Copy by FelipeFTN
+- Lock Keys by kazimieras.vaina
+- Places Status Indicator by fmuellner
+
 
 # Vim
 ```
