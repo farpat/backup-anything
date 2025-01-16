@@ -12,6 +12,13 @@ Installed extensions :
 - Lock Keys by kazimieras.vaina
 - Places Status Indicator by fmuellner
 
+# Eza
+```
+sudo apt install eza
+
+```
+Fonts for icons: https://www.nerdfonts.com/font-downloads
+
 
 # Vim
 ```
