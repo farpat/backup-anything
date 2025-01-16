@@ -4,11 +4,12 @@ ZSH_THEME="afowler"
 
 plugins=()
 
-source $HOME/.bash_aliases
+
 source $ZSH/oh-my-zsh.sh
 source $HOME/.zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 source $HOME/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
 source $HOME/.zsh/zsh-ctrl-r/fzf-zsh-plugin.plugin.zsh
+source $HOME/.bash_aliases
 
 function preexec() {
   cmd_start=$(($(print -P %D{%s%6.}) / 1000))
