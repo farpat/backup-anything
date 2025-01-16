@@ -18,3 +18,4 @@ alias php="docker run --rm --interactive --tty --volume $PWD:/app -w /app --user
 alias composer="docker run --rm --interactive --tty --volume $PWD:/app --user $(id -u):$(id -g) composer/composer"
 alias ls="eza --icons"
 alias cat="batcat --paging=never --theme=gruvbox-light"
+alias rg="grep"
