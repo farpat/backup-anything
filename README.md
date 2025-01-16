@@ -1,6 +1,6 @@
 # Some basics
 ```bash
-sudo apt -y install wget tree curl vim snapd snapd-xdg-open ffmpeg htop xclip xsel flameshot
+sudo apt -y install wget tree curl vim snapd snapd-xdg-open ffmpeg htop xclip xsel flameshot eza
 ```
 
 # Gnome extensions 
@@ -13,10 +13,6 @@ Installed extensions :
 - Places Status Indicator by fmuellner
 
 # Eza
-```
-sudo apt install eza
-
-```
 Fonts for icons: https://www.nerdfonts.com/font-downloads
 
 
@@ -104,6 +100,9 @@ sudo snap install code
 sudo snap install spotify
 sudo snap install vlc
 sudo snap install postman
+sudo snap install gemini-desktop
+sudo snap install chatgpt-desktop
+sudo snap install onlyoffice-desktopeditors
 ```
 
 # Tips
