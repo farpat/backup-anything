@@ -69,18 +69,6 @@ To avoid being "sudoer" when using docker:
 sudo gpasswd -a $USER docker
 ```
 
-# Node && NPM
-Follow instructions: https://github.com/nodesource/distributions/blob/master/README.md#debinstall
-
-# PHP && Composer
-```bash
-# For PHP 
-sudo apt purge --auto-remove ^php
-sudo apt install php8.2 php8.2-{mbstring,sqlite3,xml,curl}
-
-# For composer, follow instructions: https://getcomposer.org/download/
-```
-
 # Flameshot 
 - Paramètres >
 - Clavier >
