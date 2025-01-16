@@ -1,6 +1,8 @@
 # Some basics
 ```bash
-sudo apt -y install wget tree curl vim snapd snapd-xdg-open ffmpeg htop xclip xsel flameshot eza bat
+sudo apt -y install wget tree curl vim snapd \
+snapd-xdg-open ffmpeg htop xclip xsel flameshot \
+eza bat rg
 ```
 
 # Gnome extensions 
