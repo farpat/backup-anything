@@ -6,7 +6,6 @@ eza bat rg
 ```
 
 # Gnome extensions 
-https://extensions.gnome.org/local/
 Installed extensions : 
 - Dash to Panel bu charlesg99
 - Docker by stickman_0x00
@@ -15,7 +14,7 @@ Installed extensions :
 - Places Status Indicator by fmuellner
 
 # Eza
-Fonts for icons: https://www.nerdfonts.com/font-downloads
+Fonts for icons: https://www.nerdfonts.com/font-downloads (or 0xProto.zip)
 
 
 # Vim
