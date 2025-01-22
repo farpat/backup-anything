@@ -68,31 +68,24 @@ chsh -s $(which zsh)
 # Docker && Docker compose
 Follow instructions: https://docs.docker.com/engine/install/ubuntu/#install-using-the-repository
 
-Add `docker-compose` as alias of `docker compose`:
-```
-vim /usr/bin/docker-compose
-# docker compose --compatibility "$@"
-sudo chmod +x /usr/bin/docker-compose
-```
-
 To avoid being "sudoer" when using docker:
 ```
 sudo gpasswd -a $USER docker
 ```
 
 # Flameshot 
-- Paramètres >
-- Clavier >
-- Voir et personnaliser les raccourcis > 
-- Raccourcis personnalisés > 
+- Settings >
+- Keyboard >
+- View and Customize Shortcuts > 
+- Custom Shortcuts > 
 - " + " > 
 ```
-Nom : Flameshot
-Commande : flameshot gui 
-Raccourci : <Touche Impr>
+Name : Flameshot
+Command : flameshot gui 
+Shortcut : <Touche Impr>
 ``` 
 
-Pour désactiver la capture d'écran de gnome : https://askubuntu.com/a/1426942
+For disable gnome screenshot tool: https://askubuntu.com/a/1426942
 
 # Other installations
 ```bash
