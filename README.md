@@ -10,7 +10,6 @@ Installed extensions :
 - Dash to Panel bu charlesg99
 - Docker by stickman_0x00
 - Emoji Copy by FelipeFTN
-- Lock Keys by kazimieras.vaina
 - Places Status Indicator by fmuellner
 
 # Eza
