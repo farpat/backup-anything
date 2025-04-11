@@ -7,7 +7,7 @@
     "editor.fontLigatures": true,
     "editor.fontSize": 12,
     "editor.mouseWheelZoom": true,
-    "workbench.colorTheme": "Atom One Light",
+    "workbench.colorTheme": "Tokyo Night Light",
     "git.enableSmartCommit": true,
     "git.confirmSync": false,
     "git.autofetch": true,
@@ -39,8 +39,13 @@
     },
     "chat.commandCenter.enabled": false,
     "editor.stickyScroll.enabled": false,
+    "Laravel.phpEnvironment": "local",
+    "makefile.configureOnOpen": true,
+    "gitlens.currentLine.format": "${authorAgoOrDate}",
+    "gitlens.statusBar.format": "${authorAgoOrDate}",
+    "gitlens.blame.format": "${date} ${author} ",
+    "workbench.layoutControl.enabled": false,
 }
-
 ```
 
 `keybindings.json`
@@ -119,5 +124,47 @@
         "command": "editor.action.commentLine",
         "when": "editorTextFocus && !editorReadonly"
     },
+    {
+        "key": "ctrl+shift+l",
+        "command": "windsurf.prioritized.chat.open"
+    },
+    {
+        "key": "ctrl+shift+l",
+        "command": "-windsurf.prioritized.chat.open",
+    },
+    {
+        "key": "ctrl+l",
+        "command": "-windsurf.prioritized.chat.open",
+        "when": "!terminalFocus"
+    },
+    {
+        "key": "ctrl+l",
+        "command": "-workbench.action.chat.newChat",
+        "when": "chatIsEnabled && inChat && chatLocation != 'editing-session'"
+    },
+    {
+        "key": "ctrl+l",
+        "command": "-workbench.action.chat.newEditSession",
+        "when": "chatEditingParticipantRegistered && chatIsEnabled && inChat && chatLocation == 'editing-session'"
+    },
+    {
+        "key": "ctrl+l",
+        "command": "-expandLineSelection",
+        "when": "textInputFocus"
+    },
+    {
+        "key": "ctrl+l",
+        "command": "-notebook.centerActiveCell",
+        "when": "notebookEditorFocused"
+    },
+    {
+        "key": "ctrl+l",
+        "command": "-windsurf.prioritized.chat.openFromTerminal",
+        "when": "terminalFocus"
+    },
+    {
+        "key": "ctrl+alt+s",
+        "command": "workbench.action.openSettings"
+    }
 ]
 ```
