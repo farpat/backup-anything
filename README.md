@@ -88,8 +88,6 @@ For disable gnome screenshot tool: https://askubuntu.com/a/1426942
 
 # Other installations
 ```bash
-sudo snap install phpstorm
-sudo snap install code
 sudo snap install spotify
 sudo snap install vlc
 sudo snap install postman
