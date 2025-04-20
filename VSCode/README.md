@@ -165,6 +165,42 @@
     {
         "key": "ctrl+alt+s",
         "command": "workbench.action.openSettings"
-    }
+    },
+    {
+        "key": "f2",
+        "command": "editor.action.rename",
+        "when": "editorHasRenameProvider && editorTextFocus && !editorReadonly"
+    },
+    {
+        "key": "f2",
+        "command": "-editor.action.rename",
+        "when": "editorHasRenameProvider && editorTextFocus && !editorReadonly"
+    },
+    {
+        "key": "shift+f6",
+        "command": "renameFile",
+        "when": "filesExplorerFocus && foldersViewVisible && !explorerResourceIsRoot && !explorerResourceReadonly && !inputFocus"
+    },
+    {
+        "key": "f2",
+        "command": "-renameFile",
+        "when": "filesExplorerFocus && foldersViewVisible && !explorerResourceIsRoot && !explorerResourceReadonly && !inputFocus"
+    },
+    {
+        "key": "ctrl+-",
+        "command": "editor.fold",
+    },
+    {
+        "key": "ctrl+=",
+        "command": "editor.unfold",
+    },
+    {
+        "key": "ctrl+shift+-",
+        "command": "editor.foldAll",
+    },
+    {
+        "key": "ctrl+shift+=",
+        "command": "editor.unfoldAll",
+    },
 ]
 ```
