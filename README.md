@@ -86,6 +86,26 @@ Shortcut : <Touche Impr>
 
 For disable gnome screenshot tool: https://askubuntu.com/a/1426942
 
+# DNSMasq
+```bash
+sudo apt install -y dnsmasq
+sudo systemctl disable systemd-resolved
+sudo systemctl start dnsmasq
+sudo systemctl enable dnsmasq
+```
+```
+# /etc/dnsmasq.conf
+server=1.1.1.1
+conf-dir=/etc/dnsmasq.d
+```
+
+```
+# /etc/dnsmasq.d/app.conf                                                                                                                              (41ms) 
+address=/app.loc/127.0.0.1
+address=/.app.loc/127.0.0.1
+```
+
+
 # Other installations
 ```bash
 sudo snap install spotify
