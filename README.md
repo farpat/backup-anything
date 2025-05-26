@@ -95,16 +95,17 @@ sudo systemctl enable dnsmasq
 ```
 ```
 # /etc/dnsmasq.conf
+
+# DNS servers (Cloudflare)
 server=1.1.1.1
-conf-dir=/etc/dnsmasq.d
-```
+server=1.0.0.1
 
-```
-# /etc/dnsmasq.d/app.conf                                                                                                                              (41ms) 
-address=/app.loc/127.0.0.1
-address=/.app.loc/127.0.0.1
-```
+# DNS server used when connected to the VPN
+server=172.31.0.2
 
+# Redirect all *.loc to 127.0.0.1
+address=/.loc/127.0.0.1
+```
 
 # Other installations
 ```bash
@@ -117,10 +118,6 @@ sudo snap install onlyoffice-desktopeditors
 ```
 
 # Tips
-- To add DNS server :
-``` 
-echo 'nameserver 192.168.11.254' | sudo tee -a /etc/resolv.conf && cat /etc/resolv.conf 
-``` 
 - To map `"square keyboard touch"` to `"` : 
 ```
 xmodmap -e "keycode 49 = dead_grave"
