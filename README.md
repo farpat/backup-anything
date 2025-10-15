@@ -82,7 +82,13 @@ sudo gpasswd -a $USER docker
 Name : Flameshot
 Command : flameshot gui 
 Shortcut : <Touche Impr>
-``` 
+```
+
+# Mouse shortcuts
+- Install logiops via git clone : https://github.com/PixlOne/logiops 
+- Follow building instructions
+- Copy `/etc/logid.cfg`
+
 
 For disable gnome screenshot tool: https://askubuntu.com/a/1426942
 
